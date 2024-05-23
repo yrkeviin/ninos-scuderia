@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+JP:wght@100..900&family=Quicksand:wght@300..700&family=Rowdies:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+JP:wght@100..900&family=Quicksand:wght@300..700&family=Rowdies:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+* {
+    margin: 0; /* Remove a margem padrão do body que é 8px */
+    padding: 0; /* Remove o padding padrão do body que é 8px */
+    box-sizing: border-box; /* Faz com que o padding e a borda não aumentem o tamanho do elemento */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    border: none; /* Remove a borda padrão dos elementos */
+    outline: none; /* Remove a borda de foco dos elementos */
+    scroll-behavior: smooth; /* Adiciona um efeito de rolagem suave */
+    font-family: "Poppins", sans-serif; /* Define a fonte padrão do projeto */
+}
+
+:root {
+    --bg-color: #080808; /* Define a cor de fundo do projeto */
+    --secondary-bg-color: #121212; /* Define a cor de fundo secundária do projeto */
+    --text-color: #ffffff; /* Define a cor do texto do projeto */
+    --main-color: #d72016; /* Define a cor principal do projeto */
+}
+
+body {
+    background-color: var(--bg-color); /* Define a cor de fundo do body */
+    color: var(--text-color); /* Define a cor do texto do body */
+}
+
+section {
+    min-height: 100vh; /* Define a altura mínima da seção */
+    padding: 200px 16rem 4rem; /* Adiciona um espaçamento interno */
+}
+
+.header {
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    top: 0; /* Define a distância do topo */
+    left: 0; /* Define a distância da esquerda */
+    width: 100%; /* Define a largura do cabeçalho */
+    padding: 2rem 12rem; /* Adiciona um espaçamento interno */
+    background: rgba(0, 0, 0, 0.796); /* Adiciona um fundo com transparência */
+    backdrop-filter: blur(10px); /* Adiciona um efeito de desfoque */
+    display: flex; /* Faz com que os elementos fiquem em linha */
+    justify-content: space-between; /* Alinha os elementos no espaço entre eles */
+    align-items: center; /* Alinha os elementos no centro no eixo vertical */
+    z-index: 5; /* Define a ordem de empilhamento */
+}
+
+.logo {
+    font-family: "Rowdies", sans-serif;
+    font-size: 2rem; /* Define o tamanho da fonte equivalente a 48px */
+    color: var(--text-color);
+    font-weight: 800; /* Define o peso da fonte */
+    cursor: pointer; /* Adiciona um cursor de ponteiro */
+    transition: 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.navbar a {
+    font-size: 1.2rem; /* Define o tamanho da fonte equivalente a 16px */
+    color: var(--text-color);
+    margin-left: 4rem; /* Adiciona uma margem à esquerda */
+    font-weight: 500; /* Define o peso da fonte */
+    transition: 0.3s ease; /* Adiciona uma transição suave */
+    border-bottom: 3px solid transparent; /* Adiciona uma borda na parte inferior */
+    border-radius: 3px; /* Adiciona um raio nas bordas */
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color); /* Define a cor do texto */
+    border-bottom: 3px solid var(--main-color); /* Adiciona uma borda na parte inferior */
+    border-radius: 3px; /* Adiciona um raio nas bordas */
+}
+
+.logo:hover {
+    transform: scale(1.03); /* Adiciona um efeito de escala */
+}
+
+.logo span {
+    text-shadow: 0 0 5px var(--main-color); /* Adiciona uma sombra no texto */
+}
+
+
+.home {
+    display: flex; /* Faz com que os elementos fiquem em linha */
+    align-items: center; /* Alinha os elementos no centro no eixo vertical */
+    justify-content: center; /* Alinha os elementos no centro no eixo horizontal */
+    gap: 16rem; /* Adiciona um espaçamento entre os elementos */
+}
+
+span {
+    font-family: "Rowdies", sans-serif;
+    color: var(--main-color); /* Define a cor do texto */
+}
+
+.logo span {
+    color: var(--main-color); /* Define a cor do texto */
+}
+
+.home-img {
+    border-radius: 50%; /* Adiciona um raio nas bordas */
+}
+
+.home-img img {
+    top: 3rem; /* Define a distância do topo */
+    width: 20vw; /* Define a largura do elemento equivalente a 32% da largura da tela */
+    border-radius: 50%; /* Adiciona um raio nas bordas */
+    box-shadow: 0 0 20px var(--main-color); /* Adiciona uma sombra */
+    cursor: pointer; /* Adiciona um cursor de ponteiro */
+    transition: 0.4s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.home-img img:hover {
+    box-shadow: 0 0 20px var(--main-color), 0 0 40px var(--main-color), 0 0 60px var(--main-color); /* Adiciona uma sombra */
+}
+
+header img {
+    border-radius: 50%;
+    top: 3rem; /* Define a distância do topo */
+    width: 100px; /* Define a largura do elemento equivalente a 32% da largura da tela */
+    border-radius: 50%; /* Adiciona um raio nas bordas */
+    box-shadow: 0 0 20px var(--main-color); /* Adiciona uma sombra */
+    cursor: pointer; /* Adiciona um cursor de ponteiro */
+    transition: 0.4s ease-in-out; /* Adiciona uma transição suave */
+}
+
+header img:hover {
+    box-shadow: 0 0 20px var(--main-color), 0 0 40px var(--main-color), 0 0 60px var(--main-color); /* Adiciona uma sombra */
+}
+
+.slogan {
+    font-size: 3.3rem;
+    color: var(--main-color);
+    font-family: "Rowdies", sans-serif;
+    transition: all .3s ease-in-out;
+}
+
+.slogan:hover {
+    text-shadow: 0 5px 20px #db2828;
+    transition: all .3s ease-in-out;
+    filter: grayscale(0);
+    border: 0;
+    transform: translateY(-5px);
+}
+
+.frase-slogan {
+    color: var(--main-color);
+    font-size: 2.1rem;
+    margin: 9px 0 0px;
+    transition: 0.3s ease; /* Adiciona uma transição suave */
+    border-bottom: 3px solid transparent; /* Adiciona uma borda na parte inferior */
+    width: 585px;
+}
+
+.frase-slogan:hover {
+    color: var(--text-color); /* Define a cor do texto */
+    border-bottom: 3px solid var(--main-color); /* Adiciona uma borda na parte inferior */
+    border-radius: 8px; /* Adiciona um raio nas bordas */
+}
+
+.oi {
+    font-size: 1.5rem;
+    margin: 17px 0 7px;
+}
+
+.texto-resumo {
+    font-size: 1.2rem;
+}
+
+#inicio {
+    background-color: #353535;
+}
+
+.carrinho {
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.carrinho h3 {
+    color: var(--main-color);
+    font-family: "Rowdies", sans-serif;
+    font-size: 3.3rem;
+}
+
+.carrinho h4 {
+    margin-top: 25px;
+    transition: all 0.3s ease-in-out;
+    font-size: 2.3rem;
+    transition: 0.3s ease; /* Adiciona uma transição suave */
+    border-bottom: 4px dotted transparent; /* Adiciona uma borda na parte inferior */
+    width: 585px;
+    border-radius: 10px;
+}
+
+.carrinho h4:hover {
+    color: var(--text-color); /* Define a cor do texto */
+    border-bottom: 4px dotted var(--text-color); /* Adiciona uma borda na parte inferior */
+    border-radius: 10px; /* Adiciona um raio nas bordas */
+}
+
+.carrinho p {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.carrinho img {
+    width: 40vw;
+    margin-left: 80px;
+}
+
+.equipe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.membro-equipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.membro-equipe img {
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+    width: 150px;
+}
+
+.membro-equipe img:hover {
+    filter: grayscale(0);
+    border: 0;
+    transform: translateY(-10px);
+    width: 190px;
+}
+
+.membro-equipe span {
+    margin-top: .7rem;
+    color: #b6b6b6;
+}
+
+#team img {
+    border-radius: 50%;
+    width: 180px;
+    margin: 0 20px;
+}
+
+#titulo-equipe {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+#titulo-equipe span {
+    font-size: 3rem;
+}
+
+#info{
+    background-color: #1d1d1d;
+}
